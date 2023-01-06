@@ -1,0 +1,90 @@
+/* @font-face {
+    font-family:'Aslam';
+    src:local("Aslam"),
+		url("Aslam.ttf");
+}
+
+@font-face {
+    font-family:'Al_Mushaf';
+    src:local("Al_Mushaf"),
+		url("Al_Mushaf.ttf");
+}
+@font-face{
+    font-family:ar;
+    src:local("Al_Mushaf"),
+		url("Al_Mushaf.ttf");
+}
+
+@font-face{
+    font-family:urdu;
+    src:local("Jameel Noori Nastaleeq"),
+		url("Font_Jameel-Noori-Nastaleeq.woff");
+}
+@font-face {
+    font-family:'Jameel_Noori_Nastaleeq';
+    src:local("Jameel Noori Nastaleeq"),
+		url("Font_Jameel-Noori-Nastaleeq.woff");
+}
+@font-face {
+    font-family:'Jameel-Noori-Nastaleeq';
+    src:local("Jameel Noori Nastaleeq"),
+		url("Font_Jameel-Noori-Nastaleeq.woff");
+}
+@font-face {
+    font-family:'Jameel Noori Nastaleeq';
+    src:local("Jameel Noori Nastaleeq"),
+		url("Font_Jameel-Noori-Nastaleeq.woff");
+}
+
+@font-face {
+    font-family:'Alvi Nastaleeq';
+    src:local("Jameel Noori Nastaleeq"),
+		url("Font_Jameel-Noori-Nastaleeq.woff");
+}
+
+@font-face {
+    font-family:'Noori Nastaliq';
+    src:local("Jameel Noori Nastaleeq"),
+		url("Font_Jameel-Noori-Nastaleeq.woff");
+}
+
+@font-face {
+    font-family:'Al Qalam Quran Majeed Web2_D';
+    src:local("Al Qalam Quran Majeed Web2_D"),
+		url("Al Qalam Quran Majeed Web2_D.otf");
+}
+
+@font-face{
+    font-family:Al-Qalam;
+    src:local("Al Qalam Quran Majeed Web2_D"),
+		url("Al Qalam Quran Majeed Web2_D.otf");
+}
+@font-face{
+    font-family:'Mehr Nastaliq Web';
+    src:local("Mehr_Nastaliq"),
+                url("Mehr Nastaliq Web version 1.0 beta.ttf");
+}
+
+@font-face{
+    font-family:'Akbar';
+    src:local("akbar"),
+                url("akbar.ttf");
+}
+
+@font-face{
+    font-family:'adobearabicregular';
+    src:local("adobearabicregular"),
+                url("adobearabicregular.otf");
+}
+
+@font-face{
+    font-family:'nafees_web_naskhshipped';
+    src:local("nafees_web_naskhshipped"),
+                url("nafees_web_naskhshipped.ttf");
+} */
+
+@font-face{
+    font-family:'Mehr Nastaliq Web 3';
+    src:local("Mehr Nastaliq Web 3"),
+                url("Mehr Nastaliq Web 3.ttf");
+}

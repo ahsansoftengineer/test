@@ -1,0 +1,4 @@
+{
+  "TRANSACTION_BATCH":"Application is going to generate {{batchNumber}}_{{profileName}} batch",
+  "DEPOSIT_BANK_WAJIBA":"You have entered incorrect {{amount}} {{type}} total"
+}

@@ -1,0 +1,336 @@
+/*******************************/
+// Custom Variables
+/*******************************/
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,300,600,700");
+/*Theme Colors*/
+
+$themecolor: #0ab1fb;
+$themecolor-dark: #028ee1;
+$themecolor-alt: #1c98a8;
+$theme-light: #fff;
+$theme-dark: #212529;
+
+$skin1: #0ab1fb;
+$skin2: #408e74;
+$skin3: #6c7e9e;
+$skin4: #038ff3;
+$skin5: #272c33;
+$skin6: #fff;
+
+/*Topbar Colors*/
+
+$topbar: $theme-light;
+$topbar-height: 64px;
+$topbar-navlink-padding: 0px 0.75rem;
+$topbar-navlink-font-size: 15px;
+$topbar-navlink-height: 64px;
+$topbar-navbrand-padding: 0 10px 0 0px;
+
+/*Sidebar Colors*/
+
+$sidebar: $theme-light;
+$sidebar-alt: #edf0f5;
+$sidebar-text: #fff;
+$sidebar-icons: #fff;
+$sidebar-text-dark: #54667a;
+$sidebar-icons-dark: #54667a;
+
+$sidebar-width-full: 220px;
+$sidebar-width-iconbar: 180px;
+$sidebar-width-mini: 60px;
+
+/*Boxed layout width*/
+
+$boxed-width: 1200px;
+
+/*Shadow*/
+
+$shadow: 1px 0px 20px rgba(0, 0, 0, 0.08);
+
+/*transitions*/
+
+$transitions: 0.2s ease-in;
+
+/*Dark transparent bg*/
+
+$transparent-dark-bg: rgba(0, 0, 0, 0.05);
+
+$lft: left;
+$rgt: right;
+$card-alt: #e4e9ef;
+
+%square {
+  border-radius: 0px;
+}
+
+%rotate45 {
+  transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+}
+
+/*******************************/
+// Bootstrap overrides
+/*******************************/
+
+/**
+ * Table Of Content
+ *
+ *  1. Color system
+ *  2. Options
+ *  3. Body
+ *  4. Typography
+ *  5. Breadcrumbs
+ *  6. Cards
+ *  7. Dropdowns
+ *  8. Buttons
+ *  9. Typography
+ *  10. Progress bars
+ *  11. Tables
+ *  12. Forms
+ *  14. Component
+ */
+
+//
+// Color system
+//
+$white: #fff !default;
+$gray-100: #f3f5f7 !default;
+$gray-200: #f3f5f7 !default;
+$gray-300: #a6b7bf !default;
+$gray-400: #ced4da !default;
+$gray-500: #98a6ad !default;
+$gray-600: #cccccc !default;
+$gray-700: #4f5467 !default;
+$gray-800: #2b2b2b !default;
+$gray-900: #212529 !default;
+$gray-1000: #ced4da;
+$black: #000 !default;
+$extra-light: #f7fafc;
+
+$blue: #03a9f3 !default;
+$indigo: #6610f2 !default;
+$purple: #7460ee !default;
+$pink: #e83e8c !default;
+$red: #fb9678 !default;
+$orange: #fb8c00 !default;
+$yellow: #fec107 !default;
+$green: #00c292 !default;
+$teal: #20c997 !default;
+$cyan: #4fc3f7 !default;
+$primary: #7460ee !default;
+$inverse: #4c5667 !default;
+
+$text-muted: $gray-500 !default;
+
+$colors: (
+  "blue": $blue,
+  "indigo": $indigo,
+  "purple": $purple,
+  "pink": $pink,
+  "red": $red,
+  "orange": $orange,
+  "yellow": $yellow,
+  "green": $green,
+  "teal": $teal,
+  "cyan": $cyan,
+  "white": $white,
+  "gray": $gray-600,
+  "gray-dark": $gray-800,
+);
+
+$primary: $blue !default;
+$secondary: $gray-600 !default;
+$success: $green !default;
+$info: $blue !default;
+$warning: $yellow !default;
+$danger: $red !default;
+$light: $gray-200 !default;
+$dark: $gray-800 !default;
+$muted: $gray-500 !default;
+$cyan: $cyan !default;
+$orange: $orange !default;
+$megna: #01c0c8 !default;
+
+//
+// Light Colors
+//
+$light-danger: #f9e7eb;
+$light-success: #e8fdeb;
+$light-warning: #fff8ec;
+$light-primary: #f1effd;
+$light-info: #cfecfe;
+$light-inverse: #f6f6f6;
+$light-megna: #e0f2f4;
+
+//
+// Dark Colors
+//
+$danger-dark: #e6294b;
+$success-dark: #1eacbe;
+$warning-dark: #e9ab2e;
+$primary-dark: #6352ce;
+$info-dark: #028ee1;
+$red-dark: #d61f1f;
+$inverse-dark: #232a37;
+$dark-transparent: rgba(0, 0, 0, 0.05);
+
+$theme-colors: () !default;
+
+$theme-colors: map-merge(
+  (
+    "primary": $primary,
+    "secondary": $secondary,
+    "success": $success,
+    "info": $info,
+    "warning": $warning,
+    "danger": $danger,
+    "light": $light,
+    "dark": $dark,
+    "muted": $muted,
+    "cyan": $cyan,
+    "megna": $megna,
+    "purple": $purple,
+    "inverse": $inverse,
+    "light-danger": $light-danger,
+    "light-success": $light-success,
+    "light-warning": $light-warning,
+    "light-primary": $light-primary,
+    "light-info": $light-info,
+    "light-inverse": $light-inverse,
+    "light-megna": $light-megna,
+  ),
+  $theme-colors
+);
+// Quickly modify global styling by enabling or disabling optional features.
+$enable-caret: true !default;
+$enable-rounded: true !default;
+$enable-shadows: false !default;
+$enable-gradients: false !default;
+$enable-transitions: true !default;
+$enable-hover-media-query: false !default;
+$enable-grid-classes: true !default;
+$enable-print-styles: true !default;
+// Body
+// Settings for the  element.
+$main-body-bg: #fff !default;
+$body-bg: #edf1f5;
+$body-color: #686868 !default;
+$grid-gutter-width: 30px !default;
+// Typography
+// Font, line-height, and color for body text, headings, and more.
+$font-size-base: 1rem;
+$font-weight-base: 300 !default;
+$font-family-sans-serif: "Poppins", sans-serif !default;
+$font-weight-light: 300 !default;
+$font-weight-normal: 400 !default;
+$font-weight-medium: 500 !default;
+$font-weight-bold: 800 !default;
+$h1-font-size: 36px !default;
+$h2-font-size: 24px !default;
+$h3-font-size: 21px !default;
+$h4-font-size: 18px !default;
+$h5-font-size: 16px !default;
+$h6-font-size: 14px !default;
+$headings-margin-bottom: (1rem * 0.5) !default;
+$headings-font-weight: 400 !default;
+$headings-color: #2b2b2b !default;
+// Breadcrumbs
+$breadcrumb-bg: $body-bg;
+$breadcrumb-margin-bottom: 1.5rem;
+// Cards
+$card-border-width: 0px !default;
+$card-border-color: #d7dfe3 !default;
+$card-border-radius: 0px !default;
+// Dropdowns
+$dropdown-item-padding-x: 1rem !default;
+$dropdown-item-padding-y: 0.65rem !default;
+$dropdown-border-color: $gray-200;
+$dropdown-divider-bg: $gray-100;
+$dropdown-color: #212529 !default;
+$dropdown-link-color: #67757c !default;
+// Buttons
+$btn-secondary-border: $gray-300;
+// Progress bars
+$progress-bg: $gray-100;
+// Tables
+$table-color: #212529 !default;
+$table-bg-accent: $gray-100;
+$table-bg-hover: $gray-100;
+$table-hover-bg: #f3f5f7 !default;
+$table-cell-padding: 0.75rem !default;
+$table-bg-level: -10 !default;
+$table-bg-level2: 1 !default;
+$table-bg-level3: -5 !default;
+// Components
+$component-active-color: $white !default;
+$component-active-bg: $themecolor !default;
+$badge-pill-padding-x: 0.2em !default;
+$badge-pill-padding-y: 1em !default;
+// Forms
+$input-group-addon-bg: $gray-100;
+$input-border-color: #ced4da !default;
+$input-group-addon-border-color: $gray-200;
+$input-btn-focus-color: rgba(0, 0, 0, 0.25) !default;
+$input-focus-border-color: rgba(0, 0, 0, 0.25) !default;
+// $custom-control-indicator-active-bg: rgba(0, 0, 0, 35%) !default;
+// $custom-select-indicator: url(../../assets/images/custom-select.png) !default;
+$input-btn-focus-box-shadow: transparent !default;
+$custom-select-focus-box-shadow: transparent !default;
+// $custom-select-indicator: str-replace(url(""), "%23") !default;
+// Define common padding and border radius sizes and more.
+$border-width: 1px !default;
+$border-color: rgba(120, 130, 140, 0.13) !default;
+$border-radius: 4px !default;
+$border-radius-lg: 5px !default;
+$border-radius-sm: 1px !default;
+// Progress bars
+$progress-height: 5px !default;
+// Tabs
+$nav-tabs-link-active-bg: $white !default;
+// Grid breakpoints
+// Define the minimum dimensions at which your layout will change,
+// adapting to different screen sizes, for use in media queries.
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 1024px,
+  xl: 1600px,
+) !default;
+// Navbar
+$navbar-dark-color: rgba($white, 0.5) !default;
+$navbar-dark-hover-color: rgba($white, 1) !default;
+
+$navbar-light-color: rgba($black, 0.3) !default;
+$navbar-light-hover-color: rgba($black, 0.8) !default;
+
+$badge-padding-y: 3px !default;
+$badge-padding-x: 10px !default;
+$badge-font-weight: 400 !default;
+$badge-border-radius: 4px !default;
+
+//
+// Button Shadow & Hover
+//
+$enable-shadows: true !default;
+$btn-box-shadow: 0 1px 0 rgba($white, 0.15) !default;
+
+
+// custom scss
+$width__custom__full : 31%;
+$width__custom__mini : 100%; 
+
+// 
+
+@each $color, $value in $theme-colors {
+  .btn-#{$color},
+  .btn-outline-#{$color} {
+    box-shadow: 0 2px 2px rgba($value, 0.05);
+    &:hover {
+      box-shadow: 0 8px 15px rgba($value, 0.3);
+    }
+  }
+}
