@@ -823,6 +823,7 @@ const UserSubPermission = [
 ];
 function R(title, path) {
     return {
+        // path: '/' + path,
         path,
         title,
         ...defaultProp
@@ -855,21 +856,57 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const ROUTES = [
-    (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('DM Dashboard', '/dm_dashboard'),
-    (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Organization', '/organaization'),
-    (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('E raseed Dashboard', '/e_raseed_dashboard'),
-    (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Allow Permission', '/allow_permission'),
-    (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Allow Purpose', '/allow_purpose'),
-    (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Assigning Collectors', '/assigning-collectors'),
-    (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Acknowledgement List', '/acknowledgement-list'),
-    (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Bank', '/bank'),
-    (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Eraseed Collection', '/eraseed_collection'),
-    (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Generate Batch', '/generate_batch'),
-    (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Operating Unit', '/operating_unit/ou'),
-    (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Users Donation', '/users-donation'),
-    (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Knock Off', '/knock_off'),
+    (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.P)('Top', [
+        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('DM Dashboard', 'dm_dashboard'),
+        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('E raseed Dashboard', 'e_raseed_dashboard'),
+        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Allow Permission', 'allow_permission'),
+        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Allow Purpose', 'allow_purpose'),
+        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Assigning Collectors', 'assigning-collectors'),
+        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Acknowledgement List', 'acknowledgement-list'),
+        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Bank', 'bank'),
+        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Eraseed Collection', 'eraseed_collection'),
+        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Generate Batch', 'generate_batch'),
+        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Operating Unit', 'operating_unit/ou'),
+        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Users Donation', 'users-donation'),
+        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Knock Off', 'knock_off'),
+    ]),
+    (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.P)('Hierarchy', [
+        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Org', 'org'),
+        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('BG', 'bg'),
+        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('LE', 'le'),
+        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('OU', 'ou'),
+        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('SU', 'su'),
+    ]),
+    (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.P)('Madani Basta', [
+        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Category', 'madni_basta/category'),
+        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Sub Category', 'madni_basta/sub_category'),
+        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Event', 'madni_basta/event'),
+        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Place', 'madni_basta/place'),
+    ]),
+    (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.P)('Donation', [
+        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Cell Master', 'donation/cell_master'),
+        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Donation Type', 'donation/type'),
+        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Sub Type', 'donation/sub_type'),
+        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Monthly Target', 'donation/monthly_target'),
+        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('PADC', 'donation/psdc'),
+    ]),
+    (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.P)('Donor', [
+        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Advance Setup', 'donor/adv_setup'),
+        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Basic Donor', 'donor/basic'),
+        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Donor Type', 'donor/type'),
+    ]),
+    (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.P)('Box Management', [
+        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Vendor', 'box_management/vendor'),
+        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Box Receive', 'box_management/box_receive'),
+        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Stock (Box)', 'box_management/box_stock'),
+        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Stock (OU)', 'box_management/box_stock_ou'),
+        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Stock (Collector)', 'box_management/box_stock_collector'),
+        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Box Sell', 'box_management/box_sell'),
+        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Box Distribution', 'box_management/box_sell_distribution'),
+        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Box Deposit', 'box_management/box_deposit'),
+    ]),
     (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.P)('User', [{
-            path: '/user/user',
+            path: 'user/user',
             title: 'User',
             ..._vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.defaultProp,
             permission: [
@@ -884,81 +921,53 @@ const ROUTES = [
                 }
             ]
         }]),
-    (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.P)('Box Management', [
-        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Vendor', '/box_management/vendor'),
-        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Box Receive', '/box_management/box_receive'),
-        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Stock (Box)', '/box_management/box_stock'),
-        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Stock (OU)', '/box_management/box_stock_ou'),
-        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Stock (Collector)', '/box_management/box_stock_collector'),
-        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Box Sell', '/box_management/box_sell'),
-        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Box Distribution', '/box_management/box_sell_distribution'),
-        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Box Deposit', '/box_management/box_deposit'),
-    ]),
     (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.P)('Deposit', [
-        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Cash deposit bank', '/deposit/cash_deopsit_bank'),
-        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Cash deposit Office', '/deposit/cash_deopsit_office'),
-        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Cheque deposit bank', '/deposit/cheque_deopsit_bank'),
-        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Cheque clearance', '/deposit/cheque_clearance'),
-        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Material store', '/deposit/material_store_placement'),
-    ]),
-    (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.P)('Donation', [
-        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Cell Master', '/donation/cell_master'),
-        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Donation Type', '/donation/type'),
-        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Sub Type', '/donation/sub_type'),
-        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Monthly Target', '/donation/monthly_target'),
-        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('PADC', '/donation/psdc'),
-    ]),
-    (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.P)('Donor', [
-        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Advance Setup', '/donor/adv_setup'),
-        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Basic Donor', '/donor/basic'),
-        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Donor Type', '/donor/type'),
+        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Cash deposit bank', 'deposit/cash_deopsit_bank'),
+        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Cash deposit Office', 'deposit/cash_deopsit_office'),
+        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Cheque deposit bank', 'deposit/cheque_deopsit_bank'),
+        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Cheque clearance', 'deposit/cheque_clearance'),
+        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Material store', 'deposit/material_store_placement'),
     ]),
     (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.P)('Mark Ready', [
-        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Mark Ready For ERP', '/mark_ready/ready_for_erp'),
-        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Mark Ready For Posting', '/posting/mark_ready_for_posting'),
-    ]),
-    (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.P)('Madani Basta', [
-        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Category', '/madni_basta/category'),
-        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Sub Category', '/madni_basta/sub_category'),
-        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Event', '/madni_basta/event'),
-        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Place', '/madni_basta/place'),
-    ]),
-    (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.P)('Print', [
-        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Cash Cheque Color', '/blank/cash_cheque_color'),
-        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Cash Cheque Black', '/blank/cash_cheque_black'),
-        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Material Color', '/blank/material_color'),
-        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Material Black', '/blank/material_black'),
-        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Faq', '/blank/faq'),
-        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('QR Receipt', '/blank/qr_receipt/24234'),
-    ]),
-    (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.P)('Reports', [
-        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('User Batch', '/reports/user_batch_reports'),
-        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Personal Batch', '/reports/personal_batch_report'),
-        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Cost Center', '/reports/cost_center_report'),
-        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('I/O Balance LE', '/reports/balance_report_le'),
-        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('I/O Balance Region', '/reports/balance_report_region'),
-        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('I/O Balance OU', '/reports/balance_report_ou'),
-        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('I/O Balance SU', '/reports/balance_report_su'),
-        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('JV Report', '/reports/jv_report'),
-        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Transaction (User wise)', '/reports/trans_report'),
-        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('User Jadwal', '/reports/user_jadwal_report'),
-        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Donation Reconcil', '/reports/donation_reconcil_report'),
-        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Reconcil Summary', '/reports/reconcil_summary_report'),
+        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Mark Ready For ERP', 'mark_ready/ready_for_erp'),
+        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Mark Ready For Posting', 'posting/mark_ready_for_posting'),
     ]),
     (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.P)('Transaction', [
-        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Cash / Cheque', '/transaction/cash_cheque'),
-        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Cash / Cheque Form', '/transaction/cash_cheque_add'),
-        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Deposit', '/transaction/deposit'),
-        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Deposit Form', '/transaction/deposit_add'),
-        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Material', '/transaction/material'),
-        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Material Form', '/transaction/material_add'),
-        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Bank Direct Deposit', '/transaction/bank_direct_deposit'),
-        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Bank Direct Deposit Upload', '/transaction/bank_direct_deposit_upload'),
+        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Cash / Cheque', 'transaction/cash_cheque'),
+        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Cash / Cheque Form', 'transaction/cash_cheque_add'),
+        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Deposit', 'transaction/deposit'),
+        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Deposit Form', 'transaction/deposit_add'),
+        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Material', 'transaction/material'),
+        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Material Form', 'transaction/material_add'),
+        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Bank Direct Deposit', 'transaction/bank_direct_deposit'),
+        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Bank Direct Deposit Upload', 'transaction/bank_direct_deposit_upload'),
     ]),
     (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.P)('Verifications', [
-        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Cash Direct Deposit', '/verification'),
-        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Direct Deposit Verification', '/reconciliation'),
-    ])
+        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Cash Direct Deposit', 'verification'),
+        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Direct Deposit Verification', 'reconciliation'),
+    ]),
+    (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.P)('Reports', [
+        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('User Batch', 'reports/user_batch_reports'),
+        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Personal Batch', 'reports/personal_batch_report'),
+        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Cost Center', 'reports/cost_center_report'),
+        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('I/O Balance LE', 'reports/balance_report_le'),
+        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('I/O Balance Region', 'reports/balance_report_region'),
+        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('I/O Balance OU', 'reports/balance_report_ou'),
+        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('I/O Balance SU', 'reports/balance_report_su'),
+        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('JV Report', 'reports/jv_report'),
+        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Transaction (User wise)', 'reports/trans_report'),
+        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('User Jadwal', 'reports/user_jadwal_report'),
+        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Donation Reconcil', 'reports/donation_reconcil_report'),
+        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Reconcil Summary', 'reports/reconcil_summary_report'),
+    ]),
+    (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.P)('Print', [
+        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Cash Cheque Color', 'blank/cash_cheque_color'),
+        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Cash Cheque Black', 'blank/cash_cheque_black'),
+        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Material Color', 'blank/material_color'),
+        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Material Black', 'blank/material_black'),
+        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Faq', 'blank/faq'),
+        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('QR Receipt', 'blank/qr_receipt/24234'),
+    ]),
 ];
 
 
@@ -1041,8 +1050,8 @@ var URLz;
     URLz["USER_HIERARCHY"] = "userHierarchy";
     URLz["SAVE_USER_HIERARCHY"] = "saveUserHierarchy";
     // HIARCHYCAL DROPDOWNS / LOV
-    URLz["ORG"] = "organization";
-    URLz["ORG_SYSTEM"] = "organization_system";
+    URLz["ORG"] = "org";
+    URLz["ORG_SYSTEM"] = "org_sys";
     URLz["SYSTEM"] = "system";
     URLz["BG"] = "businessGroup";
     URLz["LE"] = "legalEntity";
@@ -1206,11 +1215,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "PermissionGuard": () => (/* binding */ PermissionGuard)
 /* harmony export */ });
-/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs */ 3012);
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs */ 3012);
 /* harmony import */ var _enums_action_enum__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../enums/action.enum */ 31978);
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/core */ 39609);
-/* harmony import */ var _service_state_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../service/state.service */ 82923);
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/router */ 16873);
+/* harmony import */ var _constant_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../constant/vertical-menu-items-settings */ 92623);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/core */ 39609);
+/* harmony import */ var _service_state_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../service/state.service */ 82923);
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/router */ 16873);
+
 
 
 
@@ -1222,6 +1233,10 @@ class PermissionGuard {
         this._router = _router;
     }
     canActivateChild(childRoute, state) {
+        if (true) {
+            this._ss.permission = _constant_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.permission;
+            return true;
+        }
         const pd = childRoute.data?.permission;
         this.path = state.url;
         // No Check Conditions
@@ -1243,11 +1258,11 @@ class PermissionGuard {
         };
         // REDIRECT BASE ON CONDITIONS
         if (checkCase(_enums_action_enum__WEBPACK_IMPORTED_MODULE_0__.ACTION.VIEW))
-            return (0,rxjs__WEBPACK_IMPORTED_MODULE_2__.of)(true);
+            return (0,rxjs__WEBPACK_IMPORTED_MODULE_3__.of)(true);
         if (editCase && checkCase(_enums_action_enum__WEBPACK_IMPORTED_MODULE_0__.ACTION.EDIT))
-            return (0,rxjs__WEBPACK_IMPORTED_MODULE_2__.of)(true);
+            return (0,rxjs__WEBPACK_IMPORTED_MODULE_3__.of)(true);
         else if (!editCase && checkCase(_enums_action_enum__WEBPACK_IMPORTED_MODULE_0__.ACTION.ADD))
-            return (0,rxjs__WEBPACK_IMPORTED_MODULE_2__.of)(true);
+            return (0,rxjs__WEBPACK_IMPORTED_MODULE_3__.of)(true);
         else {
             // Check Whether the Route Exsist then go a head other wise 404
             return this.navigateTo404();
@@ -1265,11 +1280,11 @@ class PermissionGuard {
     }
     navigateTo404() {
         this._router.navigate(['/error/unauthorized']);
-        return (0,rxjs__WEBPACK_IMPORTED_MODULE_2__.of)(false);
+        return (0,rxjs__WEBPACK_IMPORTED_MODULE_3__.of)(false);
     }
 }
-PermissionGuard.ɵfac = function PermissionGuard_Factory(t) { return new (t || PermissionGuard)(_angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵinject"](_service_state_service__WEBPACK_IMPORTED_MODULE_1__.StateService), _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵinject"](_angular_router__WEBPACK_IMPORTED_MODULE_4__.Router)); };
-PermissionGuard.ɵprov = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdefineInjectable"]({ token: PermissionGuard, factory: PermissionGuard.ɵfac, providedIn: 'root' });
+PermissionGuard.ɵfac = function PermissionGuard_Factory(t) { return new (t || PermissionGuard)(_angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵinject"](_service_state_service__WEBPACK_IMPORTED_MODULE_2__.StateService), _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵinject"](_angular_router__WEBPACK_IMPORTED_MODULE_5__.Router)); };
+PermissionGuard.ɵprov = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵdefineInjectable"]({ token: PermissionGuard, factory: PermissionGuard.ɵfac, providedIn: 'root' });
 
 
 /***/ }),

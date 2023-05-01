@@ -19,7 +19,7 @@ __webpack_require__.r(__webpack_exports__);
 const routes = [
     { path: '', redirectTo: 'user', pathMatch: 'full' },
     {
-        path: 'organaization',
+        path: 'org',
         loadChildren: () => __webpack_require__.e(/*! import() */ "src_app_feature_donation-org_donation-org_module_ts").then(__webpack_require__.bind(__webpack_require__, /*! ./donation-org/donation-org.module */ 75125)).then((m) => m.DonationOrgModule),
     },
     {
