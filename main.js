@@ -823,7 +823,6 @@ const UserSubPermission = [
 ];
 function R(title, path) {
     return {
-        // path: '/' + path,
         path,
         title,
         ...defaultProp
@@ -856,26 +855,14 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const ROUTES = [
-    (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.P)('Top', [
-        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('DM Dashboard', 'dm_dashboard'),
-        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('E raseed Dashboard', 'e_raseed_dashboard'),
-        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Allow Permission', 'allow_permission'),
-        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Allow Purpose', 'allow_purpose'),
-        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Assigning Collectors', 'assigning-collectors'),
-        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Acknowledgement List', 'acknowledgement-list'),
-        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Bank', 'bank'),
-        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Eraseed Collection', 'eraseed_collection'),
-        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Generate Batch', 'generate_batch'),
-        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Operating Unit', 'operating_unit/ou'),
-        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Users Donation', 'users-donation'),
-        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Knock Off', 'knock_off'),
-    ]),
     (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.P)('Hierarchy', [
         (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Org', 'org'),
-        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('BG', 'bg'),
-        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('LE', 'le'),
-        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('OU', 'ou'),
-        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('SU', 'su'),
+        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Business Group', 'bg'),
+        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Legal Entity', 'le'),
+        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Operating Unit', 'operating_unit/ou'),
+        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Sub Unit', 'su'),
+        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Allow Permission', 'allow_permission'),
+        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Allow Purpose', 'allow_purpose'),
     ]),
     (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.P)('Madani Basta', [
         (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Category', 'madni_basta/category'),
@@ -967,6 +954,17 @@ const ROUTES = [
         (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Material Black', 'blank/material_black'),
         (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Faq', 'blank/faq'),
         (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('QR Receipt', 'blank/qr_receipt/24234'),
+    ]),
+    (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.P)('Hard Core', [
+        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('DM Dashboard', 'dm_dashboard'),
+        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('E raseed Dashboard', 'e_raseed_dashboard'),
+        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Assigning Collectors', 'assigning-collectors'),
+        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Acknowledgement List', 'acknowledgement-list'),
+        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Bank', 'bank'),
+        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Eraseed Collection', 'eraseed_collection'),
+        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Generate Batch', 'generate_batch'),
+        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Users Donation', 'users-donation'),
+        (0,_vertical_menu_items_settings__WEBPACK_IMPORTED_MODULE_1__.R)('Knock Off', 'knock_off'),
     ]),
 ];
 
