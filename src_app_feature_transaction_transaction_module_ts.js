@@ -2500,7 +2500,7 @@ class TransDialogComponent extends src_app_class_base_form__WEBPACK_IMPORTED_MOD
         // Transaction Properties
         this.RECEIPT_TYPEZ = src_app_model_transaction_enum__WEBPACK_IMPORTED_MODULE_3__.RECEIPT_TYPE;
         this.is_advance = 1;
-        this.loadTemplate = false;
+        this.loadTemplate = true;
         this.fullTransactionForm = injector.get(src_app_model_transaction_full_form__WEBPACK_IMPORTED_MODULE_2__.FullTransactionForm);
         this.fullBasicDonorForm = injector.get(src_app_model_donor_full_basic_donor_form__WEBPACK_IMPORTED_MODULE_5__.FullBasicDonorForm);
         this.fullGSBDonorForm = injector.get(src_app_model_donor_full_donor_gsb_form__WEBPACK_IMPORTED_MODULE_6__.FullGSBDonorForm);
